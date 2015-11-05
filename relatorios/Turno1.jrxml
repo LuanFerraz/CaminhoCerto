@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="620" pageHeight="842" columnWidth="580" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[Select *from motoristas
+where turno = 'Turno 1' or turno = 'Ambos'
+order by nome;]]>
+	</queryString>
+	<field name="cod" class="java.lang.Integer"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="dia_nasc" class="java.lang.String"/>
+	<field name="mes_nasc" class="java.lang.String"/>
+	<field name="ano_nasc" class="java.lang.String"/>
+	<field name="dtnasc" class="java.lang.String"/>
+	<field name="rg" class="java.lang.String"/>
+	<field name="cpf" class="java.lang.String"/>
+	<field name="cnh" class="java.lang.String"/>
+	<field name="cat" class="java.lang.String"/>
+	<field name="dia_venc" class="java.lang.String"/>
+	<field name="mes_venc" class="java.lang.String"/>
+	<field name="ano_venc" class="java.lang.String"/>
+	<field name="dtvenc" class="java.lang.String"/>
+	<field name="opvenc" class="java.lang.String"/>
+	<field name="carreta" class="java.lang.String"/>
+	<field name="anocar" class="java.lang.String"/>
+	<field name="modelo" class="java.lang.String"/>
+	<field name="placa" class="java.lang.String"/>
+	<field name="anoplaca" class="java.lang.String"/>
+	<field name="capton" class="java.lang.String"/>
+	<field name="turno" class="java.lang.String"/>
+	<field name="periodo" class="java.lang.String"/>
+	<field name="telres" class="java.lang.String"/>
+	<field name="telcom" class="java.lang.String"/>
+	<field name="cel" class="java.lang.String"/>
+	<field name="id" class="java.lang.String"/>
+	<field name="telrec" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="rua" class="java.lang.String"/>
+	<field name="numero" class="java.lang.String"/>
+	<field name="comp" class="java.lang.String"/>
+	<field name="cep" class="java.lang.String"/>
+	<field name="bairro" class="java.lang.String"/>
+	<field name="cidade" class="java.lang.String"/>
+	<field name="uF" class="java.lang.String"/>
+	<field name="pais" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="18" y="0" width="95" height="70"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\CaminhoCerto\\logocaminhocerto.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="136" y="59" width="414" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RELAÇÃO DE VEÍCULOS PETROCOQUE / USIMINAS (TURNO 1)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="1" width="37" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="1" width="37" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CAVALO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="37" y="1" width="47" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CARRETA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="37" y="1" width="47" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="84" y="1" width="142" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="84" y="1" width="142" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[MOTORISTA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="226" y="1" width="64" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="226" y="1" width="64" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[RG]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="290" y="1" width="58" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="290" y="1" width="58" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CNH]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="348" y="1" width="58" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="348" y="1" width="58" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="406" y="1" width="37" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CAVALO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="406" y="1" width="37" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Opaque" x="443" y="1" width="47" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="443" y="1" width="47" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CARRETA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="490" y="1" width="44" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="490" y="1" width="44" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[MODELO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="534" y="1" width="34" height="20" backcolor="#CCCCCC"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="534" y="1" width="34" height="20" backcolor="#CCCCCC"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CAP/TON]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="84" y="0" width="142" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="84" y="0" width="142" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="37" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{placa}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="0" width="37" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="226" y="0" width="64" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement mode="Transparent" x="226" y="0" width="64" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{rg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="0" width="58" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cnh}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="290" y="0" width="58" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="348" y="0" width="58" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="443" y="0" width="47" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="490" y="0" width="44" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement mode="Transparent" x="534" y="0" width="34" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="534" y="0" width="34" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{capton}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="0" width="47" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{anocar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="0" width="37" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{anoplaca}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="406" y="0" width="37" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="39" y="0" width="45" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{carreta}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="37" y="0" width="47" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement x="348" y="0" width="58" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="44" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{modelo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="435" y="5" width="87" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Calibri" size="11" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Atenciosamente,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="422" y="0" width="100" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Calibri" size="11" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Karla L.Godoy ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="14" width="124" height="15"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Calibri" size="11" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Caminho Certo Logística]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

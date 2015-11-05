@@ -1,0 +1,53 @@
+create database caminhocerto_bd;
+use caminhocerto_bd;
+
+CREATE TABLE usuario(
+codigo_usuario INT(2) NOT NULL AUTO_INCREMENT,
+nome_usuario VARCHAR(50),
+login_usuario VARCHAR(20),
+senha_usuario VARCHAR(10),
+confirma_senha VARCHAR(10),
+tipo_usuario VARCHAR(20),
+PRIMARY KEY (codigo_usuario)
+);
+
+CREATE TABLE motoristas(
+cod INT(2) NOT NULL AUTO_INCREMENT,
+nome VARCHAR(80),
+dia_nasc VARCHAR(2),
+mes_nasc VARCHAR(10),
+ano_nasc VARCHAR(4),
+dtnasc VARCHAR(20),
+rg VARCHAR(15),
+cpf VARCHAR(15),
+cnh VARCHAR(15),
+cat VARCHAR(2),
+dia_venc VARCHAR(2),
+mes_venc VARCHAR(10),
+ano_venc VARCHAR(4),
+dtvenc VARCHAR(20),
+opvenc VARCHAR(3),
+carreta VARCHAR(10),
+anocar VARCHAR(4),
+modelo VARCHAR(30),
+placa VARCHAR(10),
+anoplaca VARCHAR(4),
+capton VARCHAR(10),
+turno VARCHAR(7),
+periodo VARCHAR(5),
+telres VARCHAR(20),
+telcom VARCHAR(20),
+cel VARCHAR(20),
+id VARCHAR(20),
+telrec VARCHAR(20),
+email VARCHAR(30),
+rua VARCHAR(60),
+numero VARCHAR(10),
+comp VARCHAR(10),
+cep VARCHAR(15),
+bairro VARCHAR(50),
+cidade VARCHAR(50),
+uF VARCHAR(5),
+pais VARCHAR(50),
+PRIMARY KEY(cod)
+);
